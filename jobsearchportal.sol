@@ -12,10 +12,7 @@ contract JobSearchPortal {
         string employerContactNumber;
     }
     uint private jobCount = 0;
-
     mapping(uint => JobPosting) jobs;
-
-
 
     event JobPosted(
         uint jobId,
@@ -140,13 +137,10 @@ struct applied {
                                            _userid,
                                            _jname);
     }
- 
-
-
 
 
 //rating
-    struct ApplicantRating {
+struct ApplicantRating {
         uint uid;
         string rating;
         string comment;
